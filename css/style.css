@@ -1,0 +1,88 @@
+:root {
+  --dark-gray: #353a40;
+  --light-gray: #6c757d;
+  --nav-black: #18191b;
+  --mail-gray: #6c757d94;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+nav {
+  width: 300px;
+  background-color: var(--nav-black);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  body {
+    display: block;
+  }
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  margin: auto auto 0 auto;
+}
+
+h1>span {
+  color: var(--dark-gray);
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--light-gray);
+}
+
+a {
+  color: var(--mail-gray);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.img-profil {
+  width: 230px;
+  border: 10px solid;
+  border-radius: 50%;
+}
+
+.profil-container {
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+.subheading {
+  font-family: 'Bebas Neue', cursive;
+  color: var(--light-gray);
+  font-size: 1.7rem;
+}
+
+.resume-section {
+  position: relative;
+  top: 35%;
+  margin-left: 35px;
+}
+
+.email-resume {
+  color: var(--mail-gray);
+}
+
+.resume-point {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.fab {
+  color: var(--light-gray);
+}
